@@ -1,0 +1,368 @@
+body{
+  margin: 0;
+}
+
+.glyphicon-log-out{
+  color: #fff;
+  font-size: 25px;
+  padding-top: 0;
+  margin-top: 0;
+  position: relative;
+
+}
+.msg_updated{
+  padding: 10px;
+  background-color: lightgreen;
+  min-width:90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.msg_updated_post{
+  display: none;
+  padding: 10px;
+  background-color: lightgreen;
+  min-width:90%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logout_btn{
+  position: relative;
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 5px;
+
+
+}
+
+.glyphicon-log-out:hover{
+color: pink;
+
+}
+
+
+.nav_outer{
+  border-bottom: 1px solid gray;
+
+  width: 100%;
+}
+
+.nav_ul{
+  padding: 0;
+  margin-bottom: 0;
+  width: 93%;
+  float: left;
+}
+
+.nav_ul li a{
+    display: block;
+    color: black;
+    padding: 10px 8px;
+    text-decoration: none;
+    color: #fff;
+    /*background-color: black;*/
+
+}
+
+.nav_ul li a:hover{
+    background-color: gray;
+    color: #fff;
+}
+
+
+.nav_ul li{
+  display: inline-block;
+  list-style-type: none;
+  /*height: 30px;*/
+
+}
+.nav_content{
+  width: 90vw;
+  background-color: black;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*height: 30px;*/
+}
+
+.dashboard,
+.dashboard_addpost,
+.dashboard_addcategory,
+.dashboard_admin{
+  width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  /*background-color: blue;*/
+    margin-bottom: 60px;
+}
+
+.post_table{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+
+.post_table tr:nth-child(even){
+ background-color:lightgray;
+}
+
+.category_table tr:nth-child(even){
+ background-color:lightgray;
+}
+
+.category_table{
+  width: 50vw;
+    margin-bottom: 50px;
+}
+
+.dashboard td{
+  padding-left: 10px;
+}
+
+
+
+/*add post*/
+
+.dashboard_addpost input[type="text"],
+.dashboard_addcategory input[type="text"],
+.dashboard_addpost .input_select
+{
+
+width: 99%;
+
+}
+.image_upload_container{
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.dashboard_addpost #image_upload_btn{
+  display: none;
+
+}
+
+.dashboard_addpost .image_upload_label{
+  background-color: rgba(0,0,0,.5);
+  margin-top: 10px;
+  padding: 10px;
+  font-weight: bold;
+
+}
+
+.dashboard_addpost .image_upload_label:hover{
+  cursor: pointer;
+  background: pink;
+}
+
+.dashboard_admin input[type="password"]{
+  width: 50%;
+}
+
+.dashboard_admin input[type="submit"]{
+  width: 50%;
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  height: 30px;
+  border-radius: 5px;
+  background: rgba(0,0,0,.5);
+  font-weight: bold;
+}
+
+.dashboard_admin input[type="submit"]:hover{
+  background:pink;
+  cursor: pointer;
+}
+
+.dashboard_addpost input[type="submit"],
+.dashboard_addcategory input[type="submit"]{
+  border: none;
+  outline: none;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 30px;
+}
+
+
+.dashboard_addpost input[type="submit"]:hover,
+.dashboard_addcategory input[type="submit"]:hover
+{
+  cursor: pointer;
+  border: 2px solid green;
+
+}
+
+.delete{
+  background-color: red;
+  color: white;
+}
+
+.delete_category,
+.delete_post{
+  background: rgba(255, 0, 0, 0.4);
+  color: black;
+  border: none;
+  outline: none;
+}
+
+.delete_category:hover,
+ .delete_post:hover{
+  background: rgba(255, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+
+/*login*/
+.login_body{
+  background: black;
+}
+.login_container{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 320px;
+
+  margin-top: 10%;
+padding-top: 30px;
+box-sizing: border-box;
+
+
+}
+
+.errormsg{
+  background-color: white;
+  width: 100%;
+  height: 40px;
+  color: red;
+  /*removing padding will make th white box disapear if ther is no errormsg*/
+  padding: 10px;
+  font-weight: bold;
+}
+
+.error_msg{
+  background-color:rgba(255,0,0,.6);
+  color:black;
+  font-weight: bold;
+}
+
+
+
+
+.login_container h3{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.login_container p{
+  color: white;
+}
+
+.login_container input[type='text'],
+.login_container input[type='password']
+{
+width: 100%;
+height: 30px;
+border:none;
+border-bottom: 1px solid #fff;
+background-color: transparent;
+color: #fff;
+outline: none;
+
+}
+.login_container input[type='submit']{
+width: 100%;
+border-radius: 20px;
+border: none;
+outline: none;
+margin-top: 20px;
+height: 30px;
+
+}
+.login_container input[type='submit']:hover{
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+}
+
+
+.footer{
+  background-color: black;
+  height: 40px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+/*mobile nav bar*/
+.mobile_nav_box{
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  display: none;
+  position: absolute;
+  border: 3px solid gray;
+  background-color: black;
+}
+
+
+
+
+
+@media screen and (max-width:480px){
+/*try*/
+.dashboard_admin input[type="password"]{
+  width: 100%;
+}
+
+.dashboard_admin input[type="submit"]{
+  width: 100%;
+}
+
+.mobile_nav_box{
+display: inline-block;
+float: left;
+position: relative;
+width: 32px;
+height: 100%;
+overflow: hidden;
+}
+.mobile_inner_box{
+  margin: 0;
+  border: 3px solid gray;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+
+}
+
+.mobile_nav_box:hover{
+  cursor: pointer;
+  background-color: pink;
+}
+
+.nav_ul{
+
+float: right;
+width: 100%;
+margin-top: 50px;
+padding-left: 30px;
+display: none;
+
+
+
+}
+
+
+
+.nav_ul li{
+  width: 90%;
+  border-bottom: 1px solid gray;
+  margin-left: 10px;
+}
+
+}
